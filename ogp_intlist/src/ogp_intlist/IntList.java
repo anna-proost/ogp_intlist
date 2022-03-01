@@ -14,6 +14,20 @@ public class IntList {
 	// eigenschap module
 	private int[] elements;
 	
+	class Node {
+		  int value;
+		  Node next;
+		}
+	
+		/*Node copy(Node node) {
+		  if (node == null)
+		    return null;
+		  Node newNode = new Node();
+		  newNode.value = node.value;
+		  newNode.next = copy(node.next);
+		  return newNode;
+		} */
+	
 	// gebruikt om AssertEquals na te kijken, terug te krijgen als array
 	public int[] toArray() {
 		return elements.clone(); // !! REPRESENTATION EXPOSURE, teruggegeven door module
